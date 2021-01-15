@@ -4,6 +4,7 @@ import createTokens from "./tokens/tokens.js"
 // import Parenthesis from "./types/parenthesis.js"
 import parenthesisType from "./types/paran.js"
 
+
 const operators = new Array(
     "+", "/", "*", "-", "%", "^"
 )
