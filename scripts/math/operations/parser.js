@@ -72,14 +72,20 @@ export default class MathParser {
              */
             if(this.tokens[x].type == "operator"){
 
-                ans += parseFloat(
+                var data = parseFloat(
                     getOperator(this.tokens, x)
                 )
+                
+                this.tokens[x + 1] = createTokens(
+                    data, "int"
+                )
+
+                ans += data
 
             }
         }
-        console.log(ans)
-        return ans // the final answer
+        console.log(this.tokens)
+        return this.tokens[this.tokens.length - 1].value
 
     }
 
