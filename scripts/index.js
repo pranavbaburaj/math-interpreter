@@ -22,7 +22,7 @@ function getInputValue() {
     return input.value
 }
 
-function evaluate(eq) {
+export function evaluate(eq) {
     var lexicalAnalyser = callLexerEvaluation(eq)
     var tokens = lexicalAnalyser.startEvaluation()
     console.log(tokens)
@@ -34,7 +34,7 @@ function evaluate(eq) {
 
     // updating the output with the final answer
     
-    updateOutput(answer)
+    return answer
 } 
 
 
@@ -42,11 +42,12 @@ function evaluate(eq) {
 input.addEventListener('keydown', (event) => {
     if (event.keyCode == 13) {
         // if eneter key presses
-        evaluate(getInputValue())
+        updateOutput(evaluate(getInputValue()))
     }
 })
 
 submissionButton.addEventListener('click', function(event) 
 {
-    evaluate(getInputValue())
+    updateOutput(evaluate(getInputValue()))
+
 })
