@@ -65,5 +65,5 @@ equal.addEventListener('click', function(event) {
     var answer = math_parser.startMathematicalParsing()
 
     clearInput()
-    changeInput(answer)
+    changeInput(eval(input.value))
 })
