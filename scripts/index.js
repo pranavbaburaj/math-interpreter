@@ -34,7 +34,7 @@ export function evaluate(eq) {
 
     // updating the output with the final answer
     
-    return answer
+    return `${answer}(${eval(getInputValue().toString())})`
 } 
 
 
