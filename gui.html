@@ -2,34 +2,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS | Calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style/gui.css" />
   </head>
   <body>
     <main id="calculator">
       <div class="main-container">
-        <div class="display"></div>
-        <button class="clear">AC</button>
+        <input type="text" class="display" readonly>
+        <button class="btn clear">AC</button>
         <button class="delete">Cancel</button>
-        <button class="sign">+/-</button>
-        <button id="divide" class="operator">÷</button>
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button id="multiply" class="operator">&times;</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button id="subtract" class="operator">-</button>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button id="add" class="operator">+</button>
-        <button id="zero" class="number">0</button>
-        <button class="decimal">.</button>
-        <button id="calculate" class="equal">=</button>
+        <button class="btn sign">%</button>
+        <button id="divide" class="btn operator">÷</button>
+        <button class="btn number">7</button>
+        <button class="btn number">8</button>
+        <button class="btn number">9</button>
+        <button id="multiply" class="btn operator">*</button>
+        <button class="btn number">4</button>
+        <button class="btn number">5</button>
+        <button class="btn number">6</button>
+        <button id="subtract" class="btn operator">-</button>
+        <button class="btn number">1</button>
+        <button class="btn number">2</button>
+        <button class="btn number">3</button>
+        <button id="add" class="btn operator">+</button>
+        <button id="zero" class="btn number">0</button>
+        <button class="btn decimal">.</button>
+        <button id="calculate" class="btn equal">=</button>
       </div>
     </main>
-    <script src="src/index.js"></script>
+    <script type="module" src="scripts/gui.js"></script>
   </body>
 </html>

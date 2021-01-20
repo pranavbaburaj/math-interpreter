@@ -43,6 +43,7 @@ input.addEventListener('keydown', (event) => {
     if (event.keyCode == 13) {
         // if eneter key presses
         updateOutput(evaluate(getInputValue()))
+        input.value = ""
     }
 })
 
