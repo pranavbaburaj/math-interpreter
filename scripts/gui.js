@@ -56,14 +56,15 @@ clear.addEventListener('click', function() {
 })
 
 equal.addEventListener('click', function(event) {
-    var lexicalAnalyser = callLexerEvaluation(input.value)
-    var tokens = lexicalAnalyser.startEvaluation()
+    // var lexicalAnalyser = callLexerEvaluation(input.value)
+    // var tokens = lexicalAnalyser.startEvaluation()
 
-    var math_parser = new MathParser(tokens)
+    // var math_parser = new MathParser(tokens)
 
-        // the final answer
-    var answer = math_parser.startMathematicalParsing()
+    //     // the final answer
+    // var answer = math_parser.startMathematicalParsing()
 
-    clearInput()
-    changeInput(eval(input.value))
+    // clearInput()
+    input.value = eval(input.value)
+    
 })
